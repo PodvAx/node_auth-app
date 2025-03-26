@@ -30,7 +30,7 @@ const getByToken = async (token) => {
 };
 
 const getByUserId = async (userId) => {
-  return EmailChangeRepository.findOne({ where: { userId } });
+  return EmailChangeRequest.findOne({ where: { userId } });
 };
 
 const deleteByUserId = async (userId) => {
